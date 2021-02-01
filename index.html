@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=800px, initial-scale=1.0">
+  <title>HTML Cheatsheet</title>
+  <link href="./resources/css/styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono&family=Roboto:ital@0;1&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#the-basics">The Basics</a></li>
+        <li><a href="#section-article">Sections & Articles</a></li>
+        <li><a href="#divs">Divs</a></li>
+        <li><a href="#tables">Tables</a></li>
+      </ul>
+    </nav>
+    <h1>HTML Cheatsheet</h1>
+    <p>A collection of <span class="code">&lt;html&gt;</span> tags and attributes to reference when building websites <span class="code">;)</span></p>
+  </header>
+  <main>
+    <article>
+      <section id="the-basics">
+        <h2>The Basics</h2>
+        <p>To start a documnent you need to declare<span class="code">&lt;!DOCTYPE html&gt;</span> <br> It let's the browser know that this document is using <span class="code">HTML5</span> </p>
+        <p>Here are the basic tags that your <span class="code">html</span> document needs(or should) have:</p>
+        <div class="code-box">
+          <ul> 
+            <li>&lt;!DOCTYPE html&gt; </li>
+            <li>&lt;html lang="en"&gt; </li>
+            <ul>
+              <li>&lt;head&gt; <span class="comments">&lt;!-- Metadata goes here --&gt;</span></li>
+              <ul>
+                <li>&lt;title&gt;<span class="element-content">The Title of the Page Goes Here</span>&lt;/title&gt;</li>
+                <li>&lt;link href="./styles.css" rel="stylesheet" /&gt;</li>
+              </ul>
+              <li>&lt;/head&gt;</li>
+              <li>&lt;body&gt; <span class="comments">&lt;!-- Every visible element of the page --&gt;</span></li>
+              <ul>
+                <li>&lt;header&gt;</li>
+                <ul>
+                  <li>&lt;nav&gt;</li>
+                  <li>&lt;/nav&gt;</li>
+                </ul>
+                <li>&lt;/header&gt;</li>
+                <li>&lt;main&gt; <span class="comments">&lt;!-- Main content of the page --&gt;</span></li> 
+                <li>&lt;/main&gt; </li>
+                <li>&lt;footer&gt;</li>
+                <li>&lt;/footer&gt; </li>
+              </ul>
+              <li>&lt;/body&gt;</li>
+            </ul>
+            <li>&lt;/html&gt; </li>
+          </ul>
+        </div>
+      </section>
+      <section id="section-article">
+        <h2>Sections or Articles</h2>
+        <p>Articles and sections are for SEO purposes and define the content of the <span class="code">html</span>.</p> 
+        <p>They can be used as sections in articles or articles in sections. The benefit of using one over the other is that articles are usually what is pulled from the page when linking to that section of an article.</p> 
+        <p>If a page has a blog and the sections are tutorials and reviews, then each individual article topic in that section should have the article tag. Or if within an article page you have different sections that focus on different viewpoints or topics you can use sections within articles to define that change.</p>
+        <figure>
+          <img src="./resources/media/article-section.jpg" alt="article tag with sections">
+          <figcaption>Article tag that contains sections</figcaption>
+        </figure>
+        <figure>
+          <img src="./resources/media/section-article.jpg" alt="section tag with articles">
+          <figcaption>Section tag that contains articles</figcaption>
+        </figure>
+      </section>
+      <section id="divs">
+        <h2>Should I use a div?</h2>
+        <p>I used to use divs with classes for 90% of the document. Apparently that is not a good practice of using semantic <span class="code">html</span> . Instead we should take advantage of the sections and articles to define the main content of the page. Divs should probably only be used when needed such as making a shape with CSS, etc.</p>
+        <div class="circle-one"></div>
+        <div class="circle-two"></div>
+        <div class="circle-three"></div>
+      </section>
+      <section id="tables">
+        <h2>Tables</h2>
+        <p>To create tables in <span class="code">&lt;html&gt;</span> you will need the following tags and attributes</p>
+        <table>
+            <thead>
+              <tr>
+                <th>Tag</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td><span class="code">&lt;table&gt;</span></td>
+                  <td>Table wrapper element</td>
+                </tr>
+                <tr class= "alternate-row">
+                  <td><span class="code">&lt;thead&gt;</span></td>
+                  <td>Table headers</td>
+                </tr>
+                <tr>
+                  <td><span class="code">&lt;th&gt;</span></td>
+                  <td>Table headers data/columns</td>
+                </tr>
+                <tr class= "alternate-row">
+                  <td><span class="code">&lt;tbody&gt;</span></td>
+                  <td>Table body</td>
+                </tr>
+                <tr>
+                  <td><span class="code">&lt;tr&gt;</span></td>
+                  <td>Table rows</td>
+                </tr>
+                <tr class= "alternate-row">
+                  <td><span class="code">&lt;td&gt;</span></td>
+                  <td>Table data/columns</td>
+                </tr>
+                <tr>
+                  <td><span class="code">&lt;tfoot&gt;</span></td>
+                  <td>Table footer</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+              <th>Attribute</th>
+              <th>Description</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="code">colspan</span></td>
+                <td>Defines how many columns a <span class="code">&lt;td&gt;</span> element should span.</td>
+              </tr>
+              <tr class= "alternate-row">
+                <td><span class="code">rowspan</span></td>
+                <td>Defines how many rows a <span class="code">&lt;td&gt;</span> element should span.</td>
+              </tr>
+            </tbody>
+        </table>
+        <p class="disclaimer">So realistically, when am I going to use tables in html.. Hopefully never.</p>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <p> updated 2020-01-31 asrasra</p>
+  </footer>
+</body>
+</html>

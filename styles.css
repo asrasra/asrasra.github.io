@@ -1,0 +1,162 @@
+* {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+}
+
+body {
+  margin: 25px auto 50px auto;
+  text-align: center;
+  background-color: hsla(0, 0%, 93%, 1);
+  width: 800px;
+}
+/* header content */
+nav li {
+  display: inline-block;
+  margin: 5px 15px;
+}
+
+nav a {
+  font-family: 'Press Start 2P', cursive;
+  font-size: .75em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: hsla(0, 0%, 10%, 1);
+}
+
+nav a:hover {
+  color: hsla(256, 84%, 57%, 1);
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: hsla(256, 84%, 57%, 1);
+}
+
+/* Main page content */
+h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  color:  hsla(0, 0%, 55%, 1);
+}
+
+p {
+  color: hsla(0, 0%, 25%, 1);
+}
+
+.element-content {
+  color:  hsla(0, 0%, 35%, 1);
+}
+
+.comments {
+  font-family: 'Roboto Mono', monospace;
+  color: hsla(0, 0%, 65%, 1);
+}
+
+.code-box {
+  background-color: hsla(229, 50%, 90%, 1);
+  padding: 5px;
+  text-align: left;
+  width: 600px;
+  margin: 10px auto;
+}
+
+.code-box li {
+  font-family: 'Roboto Mono', monospace;
+  color: hsla(0, 0%, 10%, 1);
+  list-style-type: none;
+}
+
+.code {
+  font-family: 'Roboto Mono', monospace;
+  background-color: hsla(229, 50%, 90%, 1);
+  color: hsla(0, 0%, 10%, 1);
+  padding: 2px;
+  font-size: .8em;
+}
+
+section {
+  padding: 25px 10px;
+} 
+
+figure {
+  margin: 55px auto;
+}
+
+#section-article img {
+  width: 600px;
+}
+
+figcaption {
+  margin: 5px auto 15px auto;
+  color: hsla(0, 0%, 35%, 1) ;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.circle-one {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  background-color: hsla(256, 84%, 57%, 0.5);
+  display: inline-block;
+  position: relative;
+  left: 50px;
+}
+
+.circle-two {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  background-color: hsla(336, 84%, 65%, 0.5);
+  display: inline-block;
+  position: relative;
+}
+
+.circle-three {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  background-color: hsla(44, 100%, 55%, 0.5);
+  display: inline-block;
+  position: relative;
+  right: 50px;
+}
+
+table {
+  border: 3px solid hsla(256, 84%, 57%, 1);
+  margin: 10px auto;
+  width: 600px;
+}
+
+thead {
+  background-color: hsla(256, 84%, 57%, 1);
+  color: hsl(0, 0%, 100%);
+}
+
+tbody {
+  text-align: left;
+}
+
+td {
+  padding: 5px;
+}
+
+.alternate-row { 
+  background-color: hsla(0, 0%, 85%, 1);
+}
+
+.disclaimer {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+footer p {
+  font-family: 'Press Start 2P', cursive;
+  font-size: .75em;
+  color: hsla(0, 0%, 55%, 1);
+}
